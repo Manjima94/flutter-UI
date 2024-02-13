@@ -12,11 +12,17 @@ class _MyWidgetState extends State<drawer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Center(child: const Text('welcome')),
-      drawer: const Drawer(
-        child:DrawerHeader(child: UserAccountsDrawerHeader(accountName: Text(''), accountEmail: Text('')),
-        )
-      ),
+      body: const Center(child: Text('welcome')),
+      drawer:  Drawer(
+          child: ListView(
+            children: const [
+              UserAccountsDrawerHeader(
+                currentAccountPictureSize: Size(30, 100),
+                accountName: Text(''),
+                accountEmail: Text('')),
+            ],
+             ),
+      )
     );
   }
 }
