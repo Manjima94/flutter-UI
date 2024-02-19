@@ -11,6 +11,7 @@ class _CommunityState extends State<Community> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: const Color.fromARGB(255, 34, 61, 74),
       body: ListTile(
         leading: Padding(
           padding: const EdgeInsets.only(top: 5.0),

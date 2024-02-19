@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_7/chats.dart';
 
 import 'package:flutter_application_7/community.dart';
 
@@ -16,7 +17,7 @@ class _MyWidgetState extends State<MyHomePage> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-            backgroundColor: const Color.fromARGB(255, 29, 123, 98),
+            backgroundColor: Color.fromARGB(255, 16, 78, 86),
             title: const Text(
               'Whatsapp',
               style: TextStyle(
@@ -77,10 +78,9 @@ class _MyWidgetState extends State<MyHomePage> {
             // Tabbar portion
 
             ),
-        body: const TabBarView(children: [
+        body: TabBarView(children: [
           Community(),
-        
-        
+          Chats(),
         ]),
       ),
     );
